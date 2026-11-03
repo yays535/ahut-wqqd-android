@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AHUT晚寝签到</string>
+
+    <string name="channel_service_name">签到执行中</string>
+    <string name="channel_service_desc">自动签到时显示进度，可随时在通知栏查看</string>
+    <string name="channel_result_name">签到结果</string>
+    <string name="channel_result_desc">签到成功或失败后的汇总提醒</string>
+    <string name="channel_guard_name">后台守护</string>
+    <string name="channel_guard_desc">常驻通知，防止系统冻结应用导致定时签到失效</string>
+</resources>

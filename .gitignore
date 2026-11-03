@@ -1,0 +1,36 @@
+# Gradle / 构建产物
+.gradle/
+build/
+local.properties
+*.apk
+*.aab
+*.idsig
+kotlin-js-store/
+
+# IDE
+.idea/
+*.iml
+.kotlin/
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 签名材料：绝不入库
+*.keystore
+*.jks
+*.p12
+keystore.properties
+
+# 敏感信息：本地账号配置
+users.json
+local.json
+
+# 联调中间产物（可能含账号、token、真实接口返回）
+live.log
+live-result.txt
+diag.json
+*.log
+
+# 开发期截图（含真实学号，脱敏后如需展示请放 docs/screenshots/）
+.shots/

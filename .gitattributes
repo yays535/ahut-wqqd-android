@@ -1,0 +1,11 @@
+# 统一换行，避免 Windows clone 后 gradlew 变成 CRLF 跑不起来
+* text=auto eol=lf
+
+*.bat text eol=crlf
+gradlew text eol=lf
+
+*.png binary
+*.jpg binary
+*.jar binary
+*.keystore binary
+*.jks binary

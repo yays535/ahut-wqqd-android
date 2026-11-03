@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 图标底色，与 adaptive icon 前景四角衔接 -->
+    <color name="ic_launcher_background">#0B2156</color>
+
+    <!-- 开屏底色：浅色跟随主题背景，深色见 values-night -->
+    <color name="splash_background">#F6F7FA</color>
+    <color name="window_background">#F6F7FA</color>
+</resources>

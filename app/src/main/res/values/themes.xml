@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 浅色基础主题：透明状态栏与导航栏，深色见 values-night -->
+    <style name="Theme.AhutSign.Base" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="Theme.AhutSign" parent="Theme.AhutSign.Base" />
+
+    <!-- 开屏：底色取自 @color/splash_background，夜间由 values-night 覆盖 -->
+    <style name="Theme.AhutSign.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>
+        <item name="windowSplashScreenIconBackgroundColor">@android:color/transparent</item>
+        <item name="windowSplashScreenAnimationDuration">220</item>
+        <item name="postSplashScreenTheme">@style/Theme.AhutSign</item>
+    </style>
+
+</resources>

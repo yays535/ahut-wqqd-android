@@ -1,0 +1,572 @@
+{
+ "password_md5": [
+  {
+   "pwd": "Ahgydx@920",
+   "expected": "6e414d222e2765b8ed2501f1df15ffdf"
+  },
+  {
+   "pwd": "",
+   "expected": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+   "pwd": "123456",
+   "expected": "e10adc3949ba59abbe56e057f20f883e"
+  },
+  {
+   "pwd": "p@ss word",
+   "expected": "b9b86dad668f10fa8e4a1c4b29d104b3"
+  },
+  {
+   "pwd": "中文密码测试",
+   "expected": "38ea64156b3ce1292ee4111940359d54"
+  },
+  {
+   "pwd": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "expected": "36a92cc94a9e0fa21f625f8bfb007adf"
+  },
+  {
+   "pwd": "Pwd!@#$%^&*()_+-=[]{}",
+   "expected": "07dc6bc1874a0a0b1d45875a625b02c9"
+  },
+  {
+   "pwd": "demo-password",
+   "expected": "4b4d9529148d8d9440d7e20c78287f69"
+  }
+ ],
+ "generate_sign": [
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-yxgl/dormSignTask/getStudentTaskPage?userDataType=student&current=1&size=15",
+   "token": "eyJhbGciOiJIUzI1NiJ9.test.token",
+   "ts_ms": 1793615951000,
+   "expected": "90674b342a43ed880f9500c206afb53c1.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-yxgl/dormSignTask/getStudentTaskPage?userDataType=student&current=1&size=15",
+   "token": "a",
+   "ts_ms": 1793615951000,
+   "expected": "3d692036d7791506ba0cb04848e7b4611.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-yxgl/dormSignTask/getStudentTaskPage?userDataType=student&current=1&size=15",
+   "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "ts_ms": 1793615951000,
+   "expected": "3340df61352cafd8576e142b2b699a0b1.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-yxgl/dormSignTask/getStudentTaskPage?userDataType=student&current=1&size=15",
+   "token": "cf7d8e9a-1234-5678-9abc-def012345678",
+   "ts_ms": 1793615951000,
+   "expected": "c1c957c6a5d9f3e47d3f049705f987731.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-yxgl/dormSignRecord/stuSign",
+   "token": "eyJhbGciOiJIUzI1NiJ9.test.token",
+   "ts_ms": 1793615951000,
+   "expected": "032f73ec74bc4387155d1a6bab7ae53e1.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-yxgl/dormSignRecord/stuSign",
+   "token": "a",
+   "ts_ms": 1793615951000,
+   "expected": "5c05ad16deabe242d0ed05e0b20d8edb1.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-yxgl/dormSignRecord/stuSign",
+   "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "ts_ms": 1793615951000,
+   "expected": "968bf1f7787cb1cbce2c7ff620dcd8431.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-yxgl/dormSignRecord/stuSign",
+   "token": "cf7d8e9a-1234-5678-9abc-def012345678",
+   "ts_ms": 1793615951000,
+   "expected": "de2a0b22eb26500f139ae62ed700b3c21.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-base/apiLog/save?menuTitle=%E6%99%9A%E5%AF%8A%E7%AD%BE%E5%88%B0",
+   "token": "eyJhbGciOiJIUzI1NiJ9.test.token",
+   "ts_ms": 1793615951000,
+   "expected": "7ddd0eaeeaa411522109e51a74b532171.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-base/apiLog/save?menuTitle=%E6%99%9A%E5%AF%8A%E7%AD%BE%E5%88%B0",
+   "token": "a",
+   "ts_ms": 1793615951000,
+   "expected": "15d035b7d97e677a31b7cb458e3e7ae51.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-base/apiLog/save?menuTitle=%E6%99%9A%E5%AF%8A%E7%AD%BE%E5%88%B0",
+   "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "ts_ms": 1793615951000,
+   "expected": "fe0f8be0553be94761a3ced23ecfcebf1.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-base/apiLog/save?menuTitle=%E6%99%9A%E5%AF%8A%E7%AD%BE%E5%88%B0",
+   "token": "cf7d8e9a-1234-5678-9abc-def012345678",
+   "ts_ms": 1793615951000,
+   "expected": "c0073e67d49e8483cfeac0fbdcacf1a01.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-yxgl/dormSignStu/getWqdStudentPage?taskId=1893&xhOrXm=&nowDate=2026-11-02&userDataType=student&current=1&size=100",
+   "token": "eyJhbGciOiJIUzI1NiJ9.test.token",
+   "ts_ms": 1793615951000,
+   "expected": "59c2a413b760923fa71ea31b56bf7fad1.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-yxgl/dormSignStu/getWqdStudentPage?taskId=1893&xhOrXm=&nowDate=2026-11-02&userDataType=student&current=1&size=100",
+   "token": "a",
+   "ts_ms": 1793615951000,
+   "expected": "921b2f17add890fe1b4dd720884b4feb1.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-yxgl/dormSignStu/getWqdStudentPage?taskId=1893&xhOrXm=&nowDate=2026-11-02&userDataType=student&current=1&size=100",
+   "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "ts_ms": 1793615951000,
+   "expected": "a7767ff16ae44837e772c0ded45d03a51.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-yxgl/dormSignStu/getWqdStudentPage?taskId=1893&xhOrXm=&nowDate=2026-11-02&userDataType=student&current=1&size=100",
+   "token": "cf7d8e9a-1234-5678-9abc-def012345678",
+   "ts_ms": 1793615951000,
+   "expected": "709b2d852b8efcf4af4f207f365673821.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-yxgl/dormSignTask/getTaskByIdForApp?taskId=1&signDate=2026-11-02",
+   "token": "eyJhbGciOiJIUzI1NiJ9.test.token",
+   "ts_ms": 1793615951000,
+   "expected": "221acec423d6dc9d637f6e5a971eb6e01.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-yxgl/dormSignTask/getTaskByIdForApp?taskId=1&signDate=2026-11-02",
+   "token": "a",
+   "ts_ms": 1793615951000,
+   "expected": "7c9045527dc2dbe2cc3a3988d41b57511.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-yxgl/dormSignTask/getTaskByIdForApp?taskId=1&signDate=2026-11-02",
+   "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "ts_ms": 1793615951000,
+   "expected": "b76e0e81a39bb0c3cbbb98a496fb197d1.MTc5MzYxNTk1MTAwMA=="
+  },
+  {
+   "url": "https://xskq.ahut.edu.cn/api/flySource-yxgl/dormSignTask/getTaskByIdForApp?taskId=1&signDate=2026-11-02",
+   "token": "cf7d8e9a-1234-5678-9abc-def012345678",
+   "ts_ms": 1793615951000,
+   "expected": "1a4be990b0d0cb6ae4a6b231ac5982d71.MTc5MzYxNTk1MTAwMA=="
+  }
+ ],
+ "sign_code": [
+  {
+   "ts_ms": 1793615201000,
+   "expected": "e9d1c4db78ee321f7fd4447810359183"
+  },
+  {
+   "ts_ms": 1793626240000,
+   "expected": "786b4d55b07100afe90c22525556c15e"
+  },
+  {
+   "ts_ms": 1767196800000,
+   "expected": "e813816beb3d2838d0c26f4e0010e1ca"
+  },
+  {
+   "ts_ms": 1798732799000,
+   "expected": "117779ae6588fafefa678e1148c0eb59"
+  },
+  {
+   "ts_ms": 1835409600000,
+   "expected": "2dcdcb001ec5d7f0694952afaaf020e2"
+  },
+  {
+   "ts_ms": 1772294401000,
+   "expected": "ae5529ee2665fea7162839c92b04d0b0"
+  },
+  {
+   "ts_ms": 1791155289000,
+   "expected": "6b333949d533987c95491293e65a8704"
+  },
+  {
+   "ts_ms": 1814362200000,
+   "expected": "fc42173a956d682653f109ac8194fb37"
+  }
+ ],
+ "stu_task_id": [
+  {
+   "lat": "31.234567",
+   "lng": "117.123456",
+   "acc": "28.34",
+   "date": "2026-11-02",
+   "taskId": "ebf794a5c9f6bff2575114ada2339658",
+   "fileId": "",
+   "expect_strs": [
+    "31.234567",
+    "117.123456",
+    "28.34"
+   ],
+   "expected": "8a22bbb005973f7e626e402976c04059"
+  },
+  {
+   "lat": "31.234567",
+   "lng": "117.123456",
+   "acc": "28.34",
+   "date": "2026-11-02",
+   "taskId": "1893",
+   "fileId": "",
+   "expect_strs": [
+    "31.234567",
+    "117.123456",
+    "28.34"
+   ],
+   "expected": "5adad3fdfac9788dcdd04093580aa19c"
+  },
+  {
+   "lat": "31.234567",
+   "lng": "117.123456",
+   "acc": "28.34",
+   "date": "2026-11-02",
+   "taskId": "",
+   "fileId": "",
+   "expect_strs": [
+    "31.234567",
+    "117.123456",
+    "28.34"
+   ],
+   "expected": "eab15c5595322ad02e0af93e51199bd1"
+  },
+  {
+   "lat": "0.0",
+   "lng": "0.0",
+   "acc": "25.0",
+   "date": "2026-11-02",
+   "taskId": "ebf794a5c9f6bff2575114ada2339658",
+   "fileId": "",
+   "expect_strs": [
+    "0.0",
+    "0.0",
+    "25.0"
+   ],
+   "expected": "ce9200507ff8c971b595608306ee3319"
+  },
+  {
+   "lat": "0.0",
+   "lng": "0.0",
+   "acc": "25.0",
+   "date": "2026-11-02",
+   "taskId": "1893",
+   "fileId": "",
+   "expect_strs": [
+    "0.0",
+    "0.0",
+    "25.0"
+   ],
+   "expected": "25bbb2dd85890477a3b31ed212b1d1cf"
+  },
+  {
+   "lat": "0.0",
+   "lng": "0.0",
+   "acc": "25.0",
+   "date": "2026-11-02",
+   "taskId": "",
+   "fileId": "",
+   "expect_strs": [
+    "0.0",
+    "0.0",
+    "25.0"
+   ],
+   "expected": "71e7587c805b34ccf44929776fa43644"
+  },
+  {
+   "lat": "31.2",
+   "lng": "117.0",
+   "acc": "30.0",
+   "date": "2026-11-02",
+   "taskId": "ebf794a5c9f6bff2575114ada2339658",
+   "fileId": "",
+   "expect_strs": [
+    "31.2",
+    "117.0",
+    "30.0"
+   ],
+   "expected": "95ee09b2f747c62426e5581d7a766ab4"
+  },
+  {
+   "lat": "31.2",
+   "lng": "117.0",
+   "acc": "30.0",
+   "date": "2026-11-02",
+   "taskId": "1893",
+   "fileId": "",
+   "expect_strs": [
+    "31.2",
+    "117.0",
+    "30.0"
+   ],
+   "expected": "b007e8922c4155e22fa53acb9023656e"
+  },
+  {
+   "lat": "31.2",
+   "lng": "117.0",
+   "acc": "30.0",
+   "date": "2026-11-02",
+   "taskId": "",
+   "fileId": "",
+   "expect_strs": [
+    "31.2",
+    "117.0",
+    "30.0"
+   ],
+   "expected": "9e0837ec1fd6d39b7f9e9c0576b5e7ed"
+  },
+  {
+   "lat": "31.2380245",
+   "lng": "117.1265432",
+   "acc": "27.5",
+   "date": "2026-11-02",
+   "taskId": "ebf794a5c9f6bff2575114ada2339658",
+   "fileId": "",
+   "expect_strs": [
+    "31.2380245",
+    "117.1265432",
+    "27.5"
+   ],
+   "expected": "c088478f9e83e67b8ee329d2d6c69c2c"
+  },
+  {
+   "lat": "31.2380245",
+   "lng": "117.1265432",
+   "acc": "27.5",
+   "date": "2026-11-02",
+   "taskId": "1893",
+   "fileId": "",
+   "expect_strs": [
+    "31.2380245",
+    "117.1265432",
+    "27.5"
+   ],
+   "expected": "e058d7628308d97c79c9c627b6fb8780"
+  },
+  {
+   "lat": "31.2380245",
+   "lng": "117.1265432",
+   "acc": "27.5",
+   "date": "2026-11-02",
+   "taskId": "",
+   "fileId": "",
+   "expect_strs": [
+    "31.2380245",
+    "117.1265432",
+    "27.5"
+   ],
+   "expected": "b588df5b3e5bed60d57dc0e16da0a63a"
+  },
+  {
+   "lat": "-0.5",
+   "lng": "179.999999",
+   "acc": "35.0",
+   "date": "2026-11-02",
+   "taskId": "ebf794a5c9f6bff2575114ada2339658",
+   "fileId": "",
+   "expect_strs": [
+    "-0.5",
+    "179.999999",
+    "35.0"
+   ],
+   "expected": "a024a0a1d1399d5c3ee6bb4ee78ca0b6"
+  },
+  {
+   "lat": "-0.5",
+   "lng": "179.999999",
+   "acc": "35.0",
+   "date": "2026-11-02",
+   "taskId": "1893",
+   "fileId": "",
+   "expect_strs": [
+    "-0.5",
+    "179.999999",
+    "35.0"
+   ],
+   "expected": "aca97a3dd7c90df5d96203c00f5a8002"
+  },
+  {
+   "lat": "-0.5",
+   "lng": "179.999999",
+   "acc": "35.0",
+   "date": "2026-11-02",
+   "taskId": "",
+   "fileId": "",
+   "expect_strs": [
+    "-0.5",
+    "179.999999",
+    "35.0"
+   ],
+   "expected": "d6c3b2e57b94833829dcd7823541febb"
+  },
+  {
+   "lat": "31.2380248",
+   "lng": "117.11999970000001",
+   "acc": "28.34",
+   "date": "2026-11-02",
+   "taskId": "ebf794a5c9f6bff2575114ada2339658",
+   "fileId": "",
+   "expect_strs": [
+    "31.2380248",
+    "117.11999970000001",
+    "28.34"
+   ],
+   "expected": "571039b6adc2ef7a94c626c1802649bd"
+  },
+  {
+   "lat": "31.2380248",
+   "lng": "117.11999970000001",
+   "acc": "28.34",
+   "date": "2026-11-02",
+   "taskId": "1893",
+   "fileId": "",
+   "expect_strs": [
+    "31.2380248",
+    "117.11999970000001",
+    "28.34"
+   ],
+   "expected": "719ab3628a6c6175c97f5d8273614ce3"
+  },
+  {
+   "lat": "31.2380248",
+   "lng": "117.11999970000001",
+   "acc": "28.34",
+   "date": "2026-11-02",
+   "taskId": "",
+   "fileId": "",
+   "expect_strs": [
+    "31.2380248",
+    "117.11999970000001",
+    "28.34"
+   ],
+   "expected": "1378516482cb9a5ddf69a225893649fd"
+  },
+  {
+   "lat": "31.2311108",
+   "lng": "117.1269137",
+   "acc": "28.34",
+   "date": "2026-11-02",
+   "taskId": "ebf794a5c9f6bff2575114ada2339658",
+   "fileId": "",
+   "expect_strs": [
+    "31.2311108",
+    "117.1269137",
+    "28.34"
+   ],
+   "expected": "b50bfa40f7b552c369ea926099696092"
+  },
+  {
+   "lat": "31.2311108",
+   "lng": "117.1269137",
+   "acc": "28.34",
+   "date": "2026-11-02",
+   "taskId": "1893",
+   "fileId": "",
+   "expect_strs": [
+    "31.2311108",
+    "117.1269137",
+    "28.34"
+   ],
+   "expected": "34204910170e0630811533573f6692df"
+  },
+  {
+   "lat": "31.2311108",
+   "lng": "117.1269137",
+   "acc": "28.34",
+   "date": "2026-11-02",
+   "taskId": "",
+   "fileId": "",
+   "expect_strs": [
+    "31.2311108",
+    "117.1269137",
+    "28.34"
+   ],
+   "expected": "e5df7f46718cc3028bfc97a84ed37249"
+  },
+  {
+   "lat": "31.2345",
+   "lng": "117.1234567",
+   "acc": "28.34",
+   "date": "2026-11-02",
+   "taskId": "ebf794a5c9f6bff2575114ada2339658",
+   "fileId": "",
+   "expect_strs": [
+    "31.2345",
+    "117.1234567",
+    "28.34"
+   ],
+   "expected": "c86d37f39ae210d88d95c5179a6392b5"
+  },
+  {
+   "lat": "31.2345",
+   "lng": "117.1234567",
+   "acc": "28.34",
+   "date": "2026-11-02",
+   "taskId": "1893",
+   "fileId": "",
+   "expect_strs": [
+    "31.2345",
+    "117.1234567",
+    "28.34"
+   ],
+   "expected": "539dc930eea875e7b70f7567ccf300a1"
+  },
+  {
+   "lat": "31.2345",
+   "lng": "117.1234567",
+   "acc": "28.34",
+   "date": "2026-11-02",
+   "taskId": "",
+   "fileId": "",
+   "expect_strs": [
+    "31.2345",
+    "117.1234567",
+    "28.34"
+   ],
+   "expected": "f4fe1f8c3d800655cde007ef4a513e7f"
+  },
+  {
+   "lat": "31.21",
+   "lng": "117.1134567",
+   "acc": "28.34",
+   "date": "2026-11-02",
+   "taskId": "ebf794a5c9f6bff2575114ada2339658",
+   "fileId": "",
+   "expect_strs": [
+    "31.21",
+    "117.1134567",
+    "28.34"
+   ],
+   "expected": "b771a0853187c0de078c0bd20b1453bb"
+  },
+  {
+   "lat": "31.21",
+   "lng": "117.1134567",
+   "acc": "28.34",
+   "date": "2026-11-02",
+   "taskId": "1893",
+   "fileId": "",
+   "expect_strs": [
+    "31.21",
+    "117.1134567",
+    "28.34"
+   ],
+   "expected": "aa0ec9290260a576c26bd9f5b291737b"
+  },
+  {
+   "lat": "31.21",
+   "lng": "117.1134567",
+   "acc": "28.34",
+   "date": "2026-11-02",
+   "taskId": "",
+   "fileId": "",
+   "expect_strs": [
+    "31.21",
+    "117.1134567",
+    "28.34"
+   ],
+   "expected": "ac35cde96d0fbbafe2d22cfde1bc5831"
+  }
+ ]
+}
