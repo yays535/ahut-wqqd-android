@@ -1,7 +1,16 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.compose")
+}
+
+// 签名信息放在 local.properties（已被 .gitignore 排除）。
+// 没有配置时 release 仍可构建，只是产物未签名。
+val keystoreProps = Properties().apply {
+    val f = rootProject.file("local.properties")
+    if (f.exists()) f.inputStream().use { load(it) }
 }
 
 android {
@@ -16,10 +25,22 @@ android {
         versionName = "0.4.6"
     }
 
+    signingConfigs {
+        if (!keystoreProps.getProperty("ahut.storeFile").isNullOrBlank()) {
+            create("release") {
+                storeFile = file(keystoreProps.getProperty("ahut.storeFile"))
+                storePassword = keystoreProps.getProperty("ahut.storePassword")
+                keyAlias = keystoreProps.getProperty("ahut.keyAlias")
+                keyPassword = keystoreProps.getProperty("ahut.keyPassword")
+            }
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            signingConfig = signingConfigs.findByName("release")
         }
     }
 
